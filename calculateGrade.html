@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <input type="text" id="score"  value="0"><br>
+      <button type="button" onclick="showGrade()">คำนวณ</button>
+      <script>
+         function showGrade() {
+            alert(calculateGrade())
+            function calculateGrade() {
+               let score = Number(document.getElementById("score").value)
+               if (score >= 91){
+                  return 'A'
+               }else if(score >= 81){
+                  return 'B'
+               }else if(score >= 71){
+                  return 'C'
+               }else if(score >= 61){
+                  return 'D'
+               }else if(score >= 0){
+                  return 'F'
+               }else{
+                  return 'คะแนนที่กรอกไม่ถูกต้อง'
+               }
+           
+            }
+         } 
+      </script>
+   </body>
+</html> 
